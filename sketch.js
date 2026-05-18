@@ -15,6 +15,13 @@ function setup() {
   createCanvas(800, 600);
   background('#BAEFFF');
 
+  // Title
+  textAlign(CENTER);
+  textSize(32);
+  textStyle(BOLD);
+  fill('#13809E');
+  text("Cat-Jenga!", 120, 50);
+
   // Grass (background floor)
   noStroke();
   fill('#75962C');
@@ -45,9 +52,7 @@ function setup() {
   triangle(originX - 150, originY, originX - 100, originY, originX - 120, originY + 80);
 
   // Speech Text
-  textAlign(CENTER);
   textSize(14);
-  textStyle(BOLD);
   fill(0);
   text("Meow, meow, meow! \n I hope it doesn't fall...", originX + 150, originY - 100);
   text("Meow, meow, I'll \n meow, help hold it!", originX - 150, originY);
