@@ -16,4 +16,5 @@ To play via GitHub Pages, visit the link provided on the submission page.
 ## References
 
 [1] p5.js org. 2026. textStyle(). p5.js org. https://p5js.org/reference/p5/textStyle/
+
 [2] p5.js org. 2026. triangle(). p5.js org. https://p5js.org/reference/p5/triangle/
