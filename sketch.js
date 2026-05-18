@@ -16,7 +16,7 @@ function setup() {
   // Title
   textAlign(CENTER);
   textSize(32);
-  textStyle(BOLD);
+  textStyle(BOLD); // [1]
   fill('#13809E');
   text("Cat-Jenga!", 120, 50);
 
@@ -42,12 +42,12 @@ function setup() {
   let originX = 250;
   let originY = 200;
 
-  // Speech Bubble
+  // Speech Bubbles
   fill(255);
   ellipse(originX + 150, originY - 100, 200, 100);
-  triangle(originX + 150, originY - 100, originX + 200, originY - 100, originX + 250, originY - 20);
+  triangle(originX + 150, originY - 100, originX + 200, originY - 100, originX + 250, originY - 20); // [2]
   ellipse(originX - 150, originY, 180, 100);
-  triangle(originX - 150, originY, originX - 100, originY, originX - 120, originY + 80);
+  triangle(originX - 150, originY, originX - 100, originY, originX - 120, originY + 80); // [2]
 
   // Speech Text
   textSize(14);
