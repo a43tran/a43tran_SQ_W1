@@ -7,24 +7,21 @@ let catImg;
 function preload() {
   // loadImage() takes a file path relative to index.html
   // The image is stored in the variable so we can use it later
-  catImg = loadImage("assets/images/cat1.png");
+  gingerCatImg = loadImage("assets/images/cat1.png");
+  greyCatImg = loadImage("assets/images/cat2.png");
 }
 
 function setup() {
   createCanvas(800, 600);
   background('#BAEFFF');
 
-  // Text Speech
-  textAlign(CENTER);
-  textSize(14);
-  textStyle(BOLD);
-  fill(0);
-  text("Meow, meow, meow, meow!", width / 2, height / 5);
-
   // Grass (background floor)
   noStroke();
   fill('#75962C');
   rect(0, height - height / 5, width, height / 5);
+
+  // Cat 2
+  image(greyCatImg, -30, 200, greyCatImg.width / 3, greyCatImg.height / 3);
 
   // Bushes
   fill('#A2C25B');
@@ -39,6 +36,21 @@ function setup() {
 
   let originX = 250;
   let originY = 200;
+
+  // Speech Bubble
+  fill(255);
+  ellipse(originX + 150, originY - 100, 200, 100);
+  triangle(originX + 150, originY - 100, originX + 200, originY - 100, originX + 250, originY - 20);
+  ellipse(originX - 150, originY, 180, 100);
+  triangle(originX - 150, originY, originX - 100, originY, originX - 120, originY + 80);
+
+  // Speech Text
+  textAlign(CENTER);
+  textSize(14);
+  textStyle(BOLD);
+  fill(0);
+  text("Meow, meow, meow! \n I hope it doesn't fall...", originX + 150, originY - 100);
+  text("Meow, meow, I'll \n meow, help hold it!", originX - 150, originY);
 
   // Jenga Blocks
   stroke('#45041A');
@@ -94,6 +106,6 @@ function setup() {
   fill('#E882A6');
   rect(originX + 186, originY + 350, 93, 50, 5);
 
-  image(catImg, height - 230, 85, catImg.width / 6, catImg.height / 6);
-
+  // Cat 1
+  image(gingerCatImg, 365, 85, gingerCatImg.width / 6, gingerCatImg.height / 6);
 }
