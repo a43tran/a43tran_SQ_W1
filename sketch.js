@@ -1,12 +1,10 @@
 // ============================================================
-// Week 1 Example 1: Images and Shapes
+// Side Quest Week 1
 // ============================================================
 
 let catImg;
 
 function preload() {
-  // loadImage() takes a file path relative to index.html
-  // The image is stored in the variable so we can use it later
   gingerCatImg = loadImage("assets/images/cat1.png");
   greyCatImg = loadImage("assets/images/cat2.png");
 }
