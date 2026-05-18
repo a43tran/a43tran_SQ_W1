@@ -2,7 +2,8 @@
 // Side Quest Week 1
 // ============================================================
 
-let catImg;
+let gingerCatImg;
+let greyCatImg;
 
 function preload() {
   gingerCatImg = loadImage("assets/images/cat1.png");
