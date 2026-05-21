@@ -1,4 +1,4 @@
-# Side Quest Week
+# Side Quest Week 1
 
 ## Setup and Interaction Instructions
 
